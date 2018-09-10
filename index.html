@@ -10,13 +10,20 @@
         body {
             padding: 100px;
         }
+
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
     <h1>Collections du Mobilier National</h1>
     <p>Inscrivez-vous pour être notifié du lancement du site !</p>
-    <form name="contact" method="POST" netlify>
+    <form name="contact" method="POST" action="ok" netlify netlify-honeypot="human-after-all">
+        <p class="hidden">
+            <label>Ignorez ce champ si vous êtes un humain: <input name="human-after-all" /></label>
+        </p>
         <p>
             <label>Votre nom : <input type="text" name="name" /></label>
         </p>

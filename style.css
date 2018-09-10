@@ -1,7 +1,7 @@
 h1 {
 font-family: 'Source Serif Pro', serif;
 font-size : 48px;
-Line-height: 140%;
+Line-height: 160%;
 text-align: center;
 max-width: 1020px;
   color : #1E1E1E;
@@ -12,4 +12,5 @@ max-width: 1020px;
 p{font-family: 'Source Serif Pro', serif;
   font-size : 15px;
 text-align : left;
-position : relative;}
+    float: right;
+    margin: unset;}

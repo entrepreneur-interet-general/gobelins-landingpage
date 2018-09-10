@@ -1,8 +1,10 @@
 h1 {
 font-family: 'Source Serif Pro', serif;
-Font-Style: Light;
 font-size : 48px;
-Line-height: 14px;
+Line-height: 100%;
 text-align: center;
 max-width: 1020px;
+  color : #1E1E1E;
+  margin-left: auto;
+    margin-right: auto;
 }

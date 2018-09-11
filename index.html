@@ -2,45 +2,95 @@
 <html>
 
 <head>
-    <link href="style.css" rel="stylesheet" media="all" type="text/css"> 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Serif+Pro" rel="stylesheet">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Collections du Mobilier National</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
-        body {
-            padding: 100px;
-        }
-
-        .hidden {
-            display: none;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet" media="all" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Serif+Pro" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Dans quelques mois, le Mobilier national </h1><p>Manufacture national des Gobelins, </p>
-        <p>Beauvais et Savonnerie</p>
-       <h1> exposera ses objets </h1><p>mobilier, tapisserie,</p> 
-        <p>tapis, œuvres d'arts…</p> <h1>et savoir-faire </h1><p>techniques, outils, matières utilisées, </p>
-        <p>étapes de restauration…</p><h1>sur une nouvelle interface.
-    Pour être informé de son lancement :</h1>
-    <p>Manufacture national des Gobelins,</p>  <p>Beauvais et Savonnerie</p>
-    <form name="contact" method="POST" action="ok" netlify netlify-honeypot="human-after-all">
-        <p class="hidden">
-            <label>Ignorez ce champ si vous êtes un humain: <input name="human-after-all" /></label>
+    <section>
+        <main>
+            Dans quelques mois, le <em class="blue">Mobilier national</em>
+            <small class="blue">Manufactures nationales des Gobelins,<br> Beauvais et Savonnerie</small>
+            exposera ses objets
+            <small class="dark-grey">mobiliers, tapisseries,<br> tapis, œuvres d’arts…</small><br> et savoir-faire
+            <small class="dark-grey">techniques, outils, matières<br> utilisées, étapes de restauration…</small><br> sur
+            une <em class="green">nouvelle interface.
+            </em><br> Pour être informé de son lancement&nbsp;:
+        </main>
+        <form name="contact" method="POST" action="ok" netlify netlify-honeypot="human-after-all">
+            <p class="hidden">
+                <label>Ignorez ce champ si vous êtes un humain: <input name="human-after-all" /></label>
+            </p>
+            <p>
+                <input type="email" name="email" placeholder="Saisissez votre email" />
+            </p>
+            <p>
+                <button type="submit">Envoyer</button>
+            </p>
+        </form>
+    </section>
+    <section class="SlideWithBg">
+        <p class="SlideWithBg__text">
+            Et en attendant, choisissez les objets,
+            <span class="nobr">savoir-faire</span>, ateliers… que vous aimeriez découvrir en répondant à ce <a href="#" class="CTOLink"><span>Questionnaire</span></a>
+        </p>
+        <div class="SlideWithBg__imgcontainer">
+            <img src="fond_textile.jpg" alt="" class="SlideWithBg__img">
+        </div>
+    </section>
+    <section>
+        <figure class="FullScreen">
+            <img src="bivouac_napoleon.jpg" alt="Lit de camp, tente, tapis, table, chaise pliante.">
+            <figcaption>Le bivouac de Napoléon</figcaption>
+        </figure>
+    </section>
+    <section>
+        <figure class="FullScreen">
+            <img src="outils_tissage.jpg" alt="Fuseaux de tissage">
+            <figcaption>Outils pour le tissage</figcaption>
+        </figure>
+    </section>
+    <section>
+        <figure class="FullScreen">
+            <img src="restauration.jpg" alt="Détail de Lustrerie">
+            <figcaption>Étape de restauration</figcaption>
+        </figure>
+    </section>
+    <section>
+        <figure class="FullScreen">
+            <img src="cercle_chromatique.jpg" alt="Détail du cercle chromatique de Chevreul">
+            <figcaption>Cercle chromatique d’M.E Chevreul</figcaption>
+        </figure>
+    </section>
+    <footer>
+        <p>
+            <strong>Crédits images</strong>, dans l’ordre : Vincent Leroux, Yvan Moreau, Thibaut Chapotot, Vincent Leroux,
+            Bibliothèque national de France&nbsp;|&nbsp;<a href="https://gallica.bnf.fr/">gallica.bnf.fr</a>
         </p>
         <p>
-            <label>Votre nom : <input type="text" name="name" /></label>
+            <strong>Mobilier national</strong>,<br> manufacture des Gobelins, Beauvais, Savonnerie<br> 1 rue berbier du mets,<br>            75013
+            Paris
+            <br>
+            <strong>Contact</strong> : <a href="mailto:documentation.mobilier@culture.gouv.fr">documentation.mobilier@culture.gouv.fr</a>
         </p>
         <p>
-            <label>Votre email: <input type="email" name="email" /></label>
+            <!-- spacer -->
         </p>
-        <p>
-            <button type="submit">Envoyer</button>
+        <p class="Footer__logo">
+            <a href="http://www.mobiliernational.culture.gouv.fr/">
+                <img src="logo_mobilier_national.svg" alt="Logo Mobilier National" width="96" height="72">
+            </a>
         </p>
-    </form>
+        <p class="Footer__logo">
+            <a href="http://www.culture.gouv.fr/">
+                <img src="logo_ministere_culture.svg" alt="Logo Ministère de la Culture et de la Communication" width="57" height="74">
+            </a>
+        </p>
+    </footer>
 </body>
 
 </html>

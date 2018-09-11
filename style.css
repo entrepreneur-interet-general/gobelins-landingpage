@@ -1,16 +1,232 @@
-h1 {
-font-family: 'Source Serif Pro', serif;
-font-size : 48px;
-Line-height: 160%;
-text-align: center;
-max-width: 1020px;
-  color : #1E1E1E;
-  margin-left: auto;
-    margin-right: auto;
+.hidden {
+  display: none;
 }
 
-p{font-family: 'Source Serif Pro', serif;
-  font-size : 15px;
-text-align : left;
-    float: right;
-    margin: unset;}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: block;
+  font-family: "Source Serif Pro", serif;
+  font-size: 48px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 1020px;
+  color: #000;
+}
+
+main em {
+  font-style: normal;
+}
+
+main small {
+  display: inline-block;
+  height: 48px;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: left;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  width: 100%;
+  margin: 50px 25px 0;
+}
+
+form p {
+  margin: 0 0 20px;
+  padding: 0;
+}
+form button {
+  display: inline-block;
+  height: 45px;
+  padding: 0 30px;
+  margin: 10px 0 0;
+  color: white;
+  background-color: #000;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+}
+input[type="email"] {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  background-color: transparent;
+  padding: 15px 0px;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #38b672;
+  color: #38b672;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.SlideWithBg__text {
+  display: block;
+  font-family: "Source Serif Pro", serif;
+  font-size: 48px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 1020px;
+  margin: 0 auto;
+  color: #fff;
+  max-width: 770px;
+}
+.SlideWithBg__imgcontainer {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+.SlideWithBg__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.SlideWithBg__imgcontainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+figure.FullScreen {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+figure.FullScreen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
+}
+.FullScreen img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.FullScreen figcaption {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  line-height: 100%;
+  height: 35px;
+  padding: 0 15px;
+  margin: 0;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+section:nth-child(3) .FullScreen figcaption {
+  color: #2c492b;
+}
+section:nth-child(4) .FullScreen figcaption {
+  color: #e4484a;
+}
+section:nth-child(5) .FullScreen figcaption {
+  color: #ac7f3a;
+}
+section:nth-child(6) .FullScreen figcaption {
+  color: #683441;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
+.CTOLink {
+  display: inline-block;
+  vertical-align: middle;
+  height: 45px;
+  width: auto;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 0 15px;
+  margin: 0;
+  line-height: 15px;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+.CTOLink span {
+  display: inline;
+  font: normal 15px "Source Sans Pro", sans-serif;
+  vertical-align: middle;
+  position: relative;
+  top: 13px;
+}
+
+.blue {
+  color: #5380f4;
+}
+
+.green {
+  color: #38b672;
+}
+.dark-grey {
+  color: #1e1e1e;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 80px;
+  font: normal 15px/19px "Source Sans Pro", sans-serif;
+}
+
+footer p {
+  flex-grow: 2;
+  max-width: 30%;
+  padding-right: 10%;
+}
+footer p.Footer__logo {
+  flex-grow: 0;
+  padding: 0;
+  padding-left: 25px;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -244,6 +244,9 @@ footer a {
   text-decoration: none;
   color: inherit;
 }
+footer a.cgu {
+  border-bottom: 1px solid black;
+}
 
 @media screen and (min-width: 1024px) {
   footer {

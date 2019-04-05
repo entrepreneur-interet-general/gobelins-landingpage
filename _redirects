@@ -1,5 +1,6 @@
-# Redirect domain aliases to primary domain
-http://collection.mobiliernational.culture.gouv.fr/* https://collections-mobilier-national.com/:splat 302!
-https://collection.mobiliernational.culture.gouv.fr/* https://collections-mobilier-national.com/:splat 302!
 
-https://friendly-rosalind-672d0d.netlify.com/* https://collections-mobilier-national.com/:splat 301!
+# We've released the production site,
+# time to retire this landing page :)
+
+# Redirect to production site
+https://collections-mobilier-national.com/* https://collection.mobiliernational.culture.gouv.fr/:splat 301!
